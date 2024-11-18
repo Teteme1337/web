@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#space {
+    width: 0;
+    height: 150px;
+}
+
+#form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+
+#weather {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+label, p {
+    font-size: 24px;
+    color: gray;
+}
+
+input {
+    width: 500px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid gray;
+    color: gray;
+}
+
+input::placeholder {
+    color: rgb(191, 185, 185);
+    text-transform: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    color: gray;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s transform, 0.3s background-color;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: rgb(187, 187, 187);
+}
+
+table, tr, td {
+    border: 2px solid gray;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+tr:nth-of-type(2) > td {
+    width: 200px;
+    height: 150px;
+}
+
+#icon > img{
+    width: 50%;
+}

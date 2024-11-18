@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    width: 75px;
+    padding: 5px;
+    user-select: none;
+}
+
+.task {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#task_1 input { 
+    padding: 5px;
+    flex-grow: 1;
+}
+
+#task_2 img { 
+   width: 290px;
+   height: 290px;
+}
+
+#task_4 {
+    flex-flow: column wrap;
+    align-items: start;
+}
+
+#task_4 div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+#task_4 button{
+    flex-grow: 1;
+}
+
+#task_4 input{
+    padding: 5px;
+    width: 100%;
+}
